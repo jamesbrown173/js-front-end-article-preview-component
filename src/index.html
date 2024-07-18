@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Article preview component</title>
+
+    <link href="./output.css" rel="stylesheet" />
+    <script defer src="./main.js"></script>
+    <!-- add `defer` attribute -->
+  </head>
+  <body
+    class="flex flex-col items-center justify-center h-dvh w-dvw bg-slate-300"
+  >
+    <!-- Breakpoint Visualizer -->
+    <section>
+      <div
+        class="bg-green-500 w-10 h-10 fixed top-0 left-0 flex items-center justify-center text-3xl rounded-br-lg"
+      >
+        📱
+      </div>
+      <div
+        class="sm:flex bg-yellow-500 w-10 h-10 hidden items-center justify-center text-white fixed top-0 left-0 rounded-br-lg"
+      >
+        sm
+      </div>
+      <div
+        class="md:flex bg-red-500 w-10 h-10 hidden items-center justify-center text-white fixed top-0 left-0 rounded-br-lg"
+      >
+        md
+      </div>
+      <div
+        class="lg:flex bg-blue-500 w-10 h-10 hidden items-center justify-center text-white fixed top-0 left-0 rounded-br-lg"
+      >
+        lg
+      </div>
+      <div
+        class="xl:flex bg-purple-500 w-10 h-10 hidden items-center justify-center text-white fixed top-0 left-0 rounded-br-lg"
+      >
+        xl
+      </div>
+      <div
+        class="2xl:flex bg-black w-10 h-10 hidden items-center justify-center text-white fixed top-0 left-0 rounded-br-lg"
+      >
+        2xl
+      </div>
+    </section>
+
+    <!-- Main Card -->
+    <div
+      class="md:flex-row md:h-fit md:max-w-[45rem] h-[38rem] max-w-[25rem] min-w-[25rem] bg-white flex flex-col items-center justify-between rounded-lg"
+    >
+      <!-- Top Image Container -->
+      <div
+        class="md:rounded-l-lg md:rounded-none w-full h-full overflow-hidden rounded-t-lg"
+      >
+        <img
+          src="./images/drawers.jpg"
+          alt=""
+          class="object-cover size-full object-left"
+        />
+      </div>
+
+      <div class="flex flex-col items-center justify-center">
+        <!-- Card Content Container -->
+        <div class="flex flex-col p-8 gap-5">
+          <h1 class="font-bold text-xl">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          <p class="font-light text-gray-600">
+            Ever been in a room and felt like something was missing? Pherhaps it
+            felt sligthly bare and uninviting. I've got some simple tips to help
+            you make any room feel complete .
+          </p>
+        </div>
+
+        <!-- User Avatar  -->
+        <div
+          id="avatar-container"
+          class="h-24 flex flex-row w-full justify-between items-center pr-5 pl-6 rounded-b-lg"
+        >
+          <img
+            src="./images/avatar-michelle.jpg"
+            alt=""
+            class="size-12 rounded-full"
+          />
+          <!-- Name / Date Container -->
+          <div class="md:pr-48 flex flex-col justify-center items-start pr-24">
+            <h1 class="text-sm">Michelle Appleton</h1>
+            <p class="font-thin text-gray-600 text-sm">28 Jun 2020</p>
+          </div>
+          <button
+            class="share-button bg-[#E8F0F8] flex items-center justify-center size-fit p-3 rounded-full hover:cursor-pointer"
+          >
+            <img src="./images/icon-share.svg" alt="" />
+          </button>
+        </div>
+
+        <!-- Share Container Mobile-->
+        <div
+          id="share-container-mobile"
+          class="md:hidden bg-[#49556C] h-24 flex flex-row w-full justify-between items-center pr-5 rounded-b-lg hidden"
+        >
+          <!-- Inner Container -->
+          <div class="flex flex-row gap-4 p-6">
+            <p class="tracking-widest text-gray-500">SHARE</p>
+            <img
+              src="./images/icon-facebook.svg"
+              alt=""
+              class="size-6 hover:cursor-pointer"
+            />
+            <img
+              src="./images/icon-twitter.svg"
+              alt=""
+              class="size-6 hover:cursor-pointer"
+            />
+            <img
+              src="./images/icon-pinterest.svg"
+              alt=""
+              class="size-6 hover:cursor-pointer"
+            />
+          </div>
+          <button
+            class="share-button bg-[#E8F0F8] flex items-center justify-center size-fit p-3 rounded-full hover:cursor-pointer"
+          >
+            <img src="./images/icon-share.svg" alt="" />
+          </button>
+        </div>
+
+        <!-- Share Container Tablet-->
+        <div class="relative flex flex-col items-center justify-center">
+          <div
+          id="share-container-tablet"
+          class="md:absolute bottom-[4.5rem] left-[4.3rem] h-0 bg-[#49556B] md:flex flex-row gap-4 p-4 justify-center items-center rounded-lg hidden w-52"
+        >
+            <p class="tracking-widest text-gray-500 pl-10">SHARE</p>
+            <img
+              src="./images/icon-facebook.svg"
+              alt=""
+              class="hover:cursor-pointer"
+            />
+            <img
+              src="./images/icon-twitter.svg"
+              alt=""
+              class="hover:cursor-pointer"
+            />
+            <img
+              src="./images/icon-pinterest.svg"
+              alt=""
+              class="hover:cursor-pointer"
+            />
+          <div class="relative top-5 right-24 triangle-down w-0 h-0 border-l-8 border-b-transparent border-l-transparent border-r-8 border-r-transparent border-t-8 border-[#49556B] "></div>
+          </div>
+
+
+        </div>
+        
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
